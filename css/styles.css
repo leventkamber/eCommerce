@@ -1,0 +1,747 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, serif;
+}
+  .carousel{
+    text-align: center;
+    background-color: #555;
+    margin-bottom: 100px;
+    
+  }
+  .carousel-image{
+    width: 100%;
+    
+  }
+ .navbar{
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   
+ }
+ .row{
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ }
+ .col-2{
+   flex-basis: 50%;
+   min-width: 300px;
+ }
+ .col-2 img{
+   max-width: 100%;
+   padding: 50px 0;
+
+ }
+ col-2 h1{
+   font-size: 50px;
+   line-height: 60px;
+   margin: 25px 0;
+ }
+
+ nav{
+   flex: 1;
+   text-align: right;
+ }
+
+ nav ul{
+   display: inline-block;
+   list-style-type: none;
+ }
+ nav ul li{
+   display: inline-block;
+   margin-right: 20px;
+ }
+
+a{
+  text-decoration: none;
+  color: #555;
+}
+p{
+  color: #555;
+}
+.btn{
+  display:inline-block;
+  background-color: #ffd35b;
+  color: fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+
+.container{
+  max-width: 2000px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.header{
+  background: transparent;
+  margin-bottom: 100px;
+}
+h1{
+  color: rgb(146, 146, 146);
+}
+.col-3{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.col-3 img{
+  width: 100%;
+}
+
+.small-container{
+  max-width: 80%;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.col-4{
+  flex-basis: 20%;
+  min-width: 200px;
+  margin-bottom: 50px;
+  padding-right: 50px;
+  transition: transform 0.5s;
+
+}
+.col-4 img{
+  width: 100%;
+}
+.title{
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: #555;
+}
+
+.title::after{
+  content: '';
+  background: #ffd35b;
+  width: 140px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+h4{
+  color: #555;
+  font-weight: normal; 
+}
+
+.col-4 p{
+  font-size: 14px;
+}
+
+.rating .fa-solid{
+color: #ffd35b
+}
+.col-4:hover{
+  transform: translateY(-10px);
+}
+
+.btn:hover{
+  background-color:#f8e8bb;;
+}
+
+.testimonial{
+  padding-top: 100px;
+
+}
+.testimonial .col-3{
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.testimonial .col-3 img{
+  width: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+}
+.testimonial .col-3:hover{
+  transform: translateY(-10px);
+}
+.fa-solid.fa-quote-left{
+  font-size: 34px;
+  color: #ffd35b;
+}
+.col-3 p{
+  font-size: 12px;
+  margin: 12px 0;
+  color: #777;
+}
+.testimonial .col-3 h3{
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+
+.footer{
+  background: black;
+  color: #8a8a8a;
+  font-size: 14px;
+  padding: 60px 0 20px;
+}
+.footer p{
+  color: #8a8a8a;
+}
+.footer h3{
+  color: white;
+  margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+  min-width: 25%;
+  margin-bottom: 20px;
+  
+  text-align: center;
+}
+ul{
+  list-style-type: none;
+}
+.footer hr{
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright{
+  text-align: center;
+}
+.menu-icon{
+  width: 36px;
+  margin-left: 20px;
+  display: none;
+}
+
+@media only screen and (max-width: 800px){
+  nav ul{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+  }
+  nav ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a{
+    color: white;
+  }
+  .menu-icon{
+    display: block;
+    cursor: pointer;
+  }
+}
+.account-page{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 160px;
+  background-image: url("../images/background.jpg");
+}
+
+.form-container{
+  background: white;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+
+.form-container span{
+  font-weight: bold;
+  padding: 0 10px;
+  color: #555;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+.form-btn{
+  display: inline-block;
+}
+.form-container form{
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 130px;
+}
+
+form input{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+}
+form .btn{
+width: 100%;
+border: none;
+cursor: pointer;
+margin: 10px 0;
+}
+form .btn:focus{
+outline: none;
+}
+
+#RegForm{
+  width: 400px;
+  height: 500px;
+}
+form a{
+  font-size: 12px;
+}
+
+.row-2{
+  justify-content: space-between;
+  margin: 100px auto 50px;
+}
+select{
+  border: 1px solid #ffd35b;
+  padding: 5px;
+}
+select:focus{
+  outline: none;
+}
+.page-btn{
+  margin: 0 auto 80px;
+}
+.page-btn span{
+  display: inline-block;
+  border: 1px solid #ffd35b;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.page-btn span:hover{
+  background: #ffd35b;
+  color: white;
+}
+.single-product{
+  margin-top: 80px;
+}
+.single-product .col-2{
+  padding: 20px;
+  min-width: 450px;
+}
+.single-product h4{
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+.single-product select{
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+.single-product input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid #ffd35b;
+  margin-top: 20px;
+}
+input:focus{
+  outline: none;
+}
+
+.small-img-row{
+  display: flex;
+  justify-content: space-between;
+}
+.small-img-col{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+  .row{
+    text-align: center;
+  }
+  .col-2, .col-3, .col-4{
+    flex-basis: 100%;
+  }
+  .single-product .row{
+    text-align: left;
+  }
+  .single-product .col-2{
+    padding: 20px 0;
+  }
+  .single-product h1{
+    font-size: 26px;
+    line-height: 22px;
+  }
+  .cart-info p{
+    display: none;
+  }
+}
+
+.cart-page{
+  margin: 80px auto;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info{
+  display: flex;
+  flex-wrap: wrap;
+}
+th{
+  text-align: left;
+  padding: 5px;
+  color: white;
+  background: #ffd35b;
+  font-weight: normal;
+}
+td{
+  padding: 10px 5px;
+}
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a{
+  color: #f7b500;
+  font-size: 12px;
+}
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table{
+  border-top: 3px solid #ffd35b;
+  width: 100%;
+  max-width: 350px;
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  background-size: cover;
+}
+.contact-map{
+  width: 100%;
+}
+
+.contact .content{
+max-width: 800px;
+text-align: center;
+}
+.contact .content h2{
+font-size: 36px;
+font-weight: 500;
+color: white;
+}
+.contact .content p{
+  font-weight: 300;
+  color: white;
+}
+.contact-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.contact-container .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-container .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+.contact-container .contactInfo .box .icon{
+  min-width: 60px;
+  height: 60px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 22px;
+  padding-top: 20px;
+}
+.contact-container .contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: white;
+  flex-direction: column;
+  font-weight: 300;
+}
+.contact-container .contactInfo .box .text h3{
+  font-weight: 500;
+  color: #ffd35b;
+}
+.contact-container .contactInfo .box .text p{
+  color: #fff;
+}
+.contactForm{
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactForm h2{
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.contactForm.inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize:none;
+}
+
+.contactForm .inputBox span{
+  position: absolute;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactForm .inputBox input[type="submit"]{
+
+  width: 100px;
+  background: #ffd35b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+  font-size: 18px;
+  margin-left: 40%;
+}
+
+.container-gallery{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+input[name="Photos"]{
+  display: none;
+}
+.container-gallery h1{
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+}
+.container-gallery h1::before{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 3px;
+  background-color: #ffd35b;
+  bottom: -10px;
+  left: 46%;
+  transform: translateX(-50x);
+  animation: alternate 4s linear infinite;
+}
+@keyframes animate{
+  0%{
+    width: 100px;
+  }
+  50%{
+    width: 200px;
+  }
+  100%{
+    width: 100px;
+  }
+}
+
+.top-content{
+  background-color: rgb(204, 204, 204);
+  width: 90%;
+  margin: 0 auto 20-px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: 3px 3px 5px lightgray;
+  margin-bottom: 30px;
+}
+
+.top-content h3{
+  height: 100%;
+  background-color: lightgray;
+  line-height: 60px;
+  padding: 0 50px;
+  color: white;
+
+}
+
+label{
+  display: inline-block;
+  height: 100%;
+  margin: 0 20px;
+  line-height: 60px;
+  font-size: 18px;
+  color: gray;
+  cursor: pointer;
+  transition: .5s;
+}
+label:hover{
+  color: black;
+}
+
+.photo-gallery{
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 20px;
+}
+.pic{
+  position: relative;
+  height: 230px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px lightgray;
+  cursor: pointer;
+  transition: .5s;
+}
+.pic img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: .5s;
+}
+.pic::before{
+  content: "Галерия";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: -100px;
+  opacity: 0;
+  transition: .3s;
+  transition-delay: .2s;
+  z-index: 1;
+}
+.pic::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.4);
+  transition: .3s;
+}
+.pic:hover::after{
+  height: 100%;
+}
+.pic:hover::before{
+  margin-top: 0;
+  opacity: 1;
+}
+#check1:checked ~ .container-gallery .photo-gallery .pic{
+  opacity: 1;
+  transform: scale(1);
+  position: relative;
+  transition: .5s;
+}
+
+#check2:checked ~ .container-gallery .photo-gallery .merc{
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+
+#check2:checked ~ .container-gallery .photo-gallery .bmw,
+#check2:checked ~ .container-gallery .photo-gallery .audi{
+
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+
+#check3:checked ~ .container-gallery .photo-gallery .bmw{
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+
+#check3:checked ~ .container-gallery .photo-gallery .merc,
+#check3:checked ~ .container-gallery .photo-gallery .audi{
+
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
+
+#check4:checked ~ .container-gallery .photo-gallery .audi{
+  transform: scale(1);
+  opacity: 1;
+  position: relative;
+}
+
+#check4:checked ~ .container-gallery .photo-gallery .merc,
+#check4:checked ~ .container-gallery .photo-gallery .bmw{
+
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  transition: 0s;
+}
